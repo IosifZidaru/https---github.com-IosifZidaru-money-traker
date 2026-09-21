@@ -1,0 +1,176 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    padding: 40px 20px;
+}
+
+.container {
+    max-width: 550px;
+    margin: 0 auto;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.balance-card {
+    background: white;
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.balance-card p {
+    color: #777;
+
+}
+
+.balance-card h2 {
+    font-size: 36px;
+    margin: 10px 0 25px;
+}
+
+.summary {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.summary div {
+    flex: 1;
+}
+
+.summary span {
+    display: block;
+    color: #777;
+    margin-bottom: 5px;
+}
+
+.summary strong {
+    font-size: 20px;
+}
+
+.transaction-form {
+    margin-top: 25px;
+    background: white;
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.transaction-form h2 {
+    margin-bottom: 20px;
+}
+
+.transaction-form input,
+.transaction-form select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+    border: 1px solid #acc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.transaction-form button {
+    width: 100%;
+    padding: 12px; 
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.transactions {
+    margin-top: 25px;
+    background: white;
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.transactions h2 {
+    margin-bottom: 15px;
+
+}
+
+#transaction-list {
+    list-style: none;
+}
+
+#transaction-list li {
+    display: grid;
+     grid-template-columns: 1.2fr 1.2fr 100px 110px 80px; 
+    align-items: center;
+    gap: 10px;
+    padding: 12px 0;
+    border-bottom: 1px solid #eee;
+}
+
+#transaction-list li span:nth-child(3) {
+    text-align: left;
+}
+
+.income {
+    color: green;
+}
+
+.expense {
+    color: red;
+    font-weight: bold;
+}
+
+.filters {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    margin: 15px 0 20px ;
+    
+}
+    
+
+ .filters button {
+    width: 100px;
+    padding:  8px 14px;
+    border: none;
+    border-radius: 8px;
+    background: white;
+    cursor: pointer;
+    font-size: 14px ;
+}
+ .filters button:hover{
+    background: #f0f0f0;
+ }
+
+ #month-filter {
+    width: 140px;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    background: white;
+    cursor: pointer;
+ }
+
+ #search-filter {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    background: white;
+    width: 140px;
+ }
+
+ .filter {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+    flex-wrap: wrap;
+ }
