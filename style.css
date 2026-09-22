@@ -198,27 +198,37 @@ h1 {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 10px;
+        align-items: stretch;
     }
 
     .filters button {
         width: 100%;
+        min-width: 46px;
+        font-size: 16px;
     }
 
     #month-filter,
     #search-filter {
         width: 100%;
         box-sizing: border-box;
+        min-height: 46px;
+        font-size: 16px;
     }
+    
 
     #transaction-list li {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1.2fr 1fr 1fr 1.2fr auto;
         gap: 6px;
-        align-items: 12px 0;
+        align-items: center;
+        padding: 12px 0;
+        font-size: 14px;
     }
 
     #transaction-list li button {
-        width: 100%;
+        width: auto;
+        min-width: 70px;
+        padding: 8px 14px;
     }
 
  }
