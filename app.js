@@ -156,6 +156,10 @@ addButton.addEventListener("click", function() {
 
     const li = document.createElement("li");
 
+    li.dataset.date = date || "";
+    li.dataset.description = description || "";
+    li.dataset.category = category || "";
+
     const descriptionSpan = document.createElement("span");
     descriptionSpan.textContent = description;
 
@@ -190,6 +194,7 @@ addButton.addEventListener("click", function() {
     li.appendChild(deleteButton);
 
     transactionList.appendChild(li);
+    applyFilters();
 
     descriptionInput.value = "";
     amountInput.value = "";
