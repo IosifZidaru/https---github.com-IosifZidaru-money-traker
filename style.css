@@ -225,6 +225,14 @@ h1 {
         font-size: 14px;
     }
 
+    #date,
+    #month-filter {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        min-width: 0;
+    }
+
     #transaction-list li button {
         width: auto;
         min-width: 70px;
