@@ -174,3 +174,51 @@ h1 {
     margin: 20px 0;
     flex-wrap: wrap;
  }
+
+ @media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .summary {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .transaction-form {
+        padding: 20px;
+    }
+
+    .filters {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .filters button {
+        width: 100%;
+    }
+
+    #month-filter,
+    #search-filter {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    #transaction-list li {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 6px;
+        align-items: 12px 0;
+    }
+
+    #transaction-list li button {
+        width: 100%;
+    }
+
+ }

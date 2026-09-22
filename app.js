@@ -56,8 +56,16 @@ transactions.forEach(function (transaction) {
     deleteButton.classList.add("delete-btn");
     
     deleteButton.addEventListener("click", function() {
-        const index = transactions.indexOf(transaction);
+        const confirmDelete = confirm("are you sure you want to delete this transaction?");
 
+        
+        if(!confirmDelete) {
+            return;
+        }
+
+
+        const index = transactions.indexOf(transaction);
+ 
         if ( index !== -1) {
             transactions.splice(index, 1);
             localStorage.setItem("transactions", JSON.stringify(transactions));
@@ -133,6 +141,17 @@ addButton.addEventListener("click", function() {
     const value = Number(amount);
     const category = categoryInput.value;
     const date = dateInput.value;
+
+    if ( 
+        description.trim() === "" ||
+        category.trim() === "" || 
+        date === "" ||
+        !amount ||
+        value <= 0
+    ) {
+        alert("Complete all fields correctly.")
+        return;
+    }
 
     const transaction = {
         description: description,
