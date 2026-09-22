@@ -203,8 +203,9 @@ h1 {
 
     .filters button {
         width: 100%;
-        min-width: 46px;
+        min-width: 0;
         font-size: 16px;
+        background: white;
     }
 
     #month-filter,
@@ -225,8 +226,7 @@ h1 {
         font-size: 14px;
     }
 
-    #date,
-    #month-filter {
+    #date {
         width: 100%;
         max-width: 100%;
         box-sizing: border-box;
