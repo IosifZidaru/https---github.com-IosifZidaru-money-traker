@@ -58,7 +58,7 @@ transactions.forEach(function (transaction) {
     deleteButton.addEventListener("click", function() {
         const confirmDelete = confirm("are you sure you want to delete this transaction?");
 
-        
+
         if(!confirmDelete) {
             return;
         }
@@ -71,7 +71,7 @@ transactions.forEach(function (transaction) {
             localStorage.setItem("transactions", JSON.stringify(transactions));
             location.reload();
         }
-    })
+    });
 
     if (transaction.type === "income") {
         amountSpan.textContent = "+$" + transaction.amount.toFixed(2);
