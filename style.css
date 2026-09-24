@@ -209,7 +209,7 @@ h1 {
     }
 
     #month-filter {
-        width:100%;
+        width:130%;
         justify-self: start;
         box-sizing: border-box;
         min-height: 46px;
@@ -233,7 +233,7 @@ h1 {
     }
 
     #date {
-        width: 110;
+        width: 130%;
         max-width: 100%;
         box-sizing: border-box;
         min-width: 0;
