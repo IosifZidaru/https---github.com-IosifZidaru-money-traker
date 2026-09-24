@@ -208,7 +208,13 @@ h1 {
         background: white;
     }
 
-    #month-filter,
+    #month-filter {
+        width: 70%;
+        justify-self: start;
+        box-sizing: border-box;
+        min-height: 46px;
+        font-size: 16px;
+    }
     #search-filter {
         width: 100%;
         box-sizing: border-box;
@@ -227,7 +233,7 @@ h1 {
     }
 
     #date {
-        width: 100%;
+        width: 70%;
         max-width: 100%;
         box-sizing: border-box;
         min-width: 0;
